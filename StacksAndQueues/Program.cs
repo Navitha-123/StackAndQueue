@@ -10,9 +10,9 @@ namespace StacksAndQueues
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("choose option 1.pushstack \t 2.Popandpeek element \t 3.Enqueue operation");
+            Console.WriteLine("choose option 1.pushstack \t 2.Popandpeek element \t 3.Enqueue operation  \t 4.Dequeueoperation");
             int option = Convert.ToInt32(Console.ReadLine());
-            switch(option)
+            switch (option)
             {
                 case 1:
                     UC1PushStackElements stack = new UC1PushStackElements();
@@ -36,11 +36,19 @@ namespace StacksAndQueues
                     queue.Enqueue(70);
                     queue.Display();
                     break;
-                default:
-                    Console.WriteLine("Enter wrong choice");
+                case 4:
+                    UC4Dequeuequeuecreation queue1 = new UC4Dequeuequeuecreation();
+                    queue1.Enqueue(56);
+                    queue1.Enqueue(30);
+                    queue1.Enqueue(70);
+                    queue1.Dequeue();
+                    queue1.IsEmpty();
+                  
+                    queue1.Display();
                     break;
+
+                    Console.ReadLine();
             }
-            Console.ReadLine(); 
         }
     }
 }

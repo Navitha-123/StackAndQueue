@@ -49,6 +49,7 @@
     <Compile Include="UC1PushStackElements.cs" />
     <Compile Include="Uc2PopStackElements.cs" />
     <Compile Include="UC3EnqueueQueueCreation.cs" />
+    <Compile Include="UC4Dequeuequeuecreation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
