@@ -10,7 +10,7 @@ namespace StacksAndQueues
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("choose option 1.pushstack \t 2.Popandpeek element");
+            Console.WriteLine("choose option 1.pushstack \t 2.Popandpeek element \t 3.Enqueue operation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -28,6 +28,13 @@ namespace StacksAndQueues
                     stack1.Push(56);
                     stack1.IsEmpty();
                     stack1.Display();
+                    break;
+                case 3:
+                    UC3EnqueueQueueCreation queue = new UC3EnqueueQueueCreation();
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Display();
                     break;
                 default:
                     Console.WriteLine("Enter wrong choice");
