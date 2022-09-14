@@ -10,7 +10,7 @@ namespace StacksAndQueues
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("choose option 1.pushstack");
+            Console.WriteLine("choose option 1.pushstack \t 2.Popandpeek element");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -20,6 +20,14 @@ namespace StacksAndQueues
                     stack.Push(30);
                     stack.Push(56);
                     stack.Display();
+                    break;
+                case 2:
+                    Uc2PopStackElements stack1 = new Uc2PopStackElements();
+                    stack1.Push(70);
+                    stack1.Push(30);
+                    stack1.Push(56);
+                    stack1.IsEmpty();
+                    stack1.Display();
                     break;
                 default:
                     Console.WriteLine("Enter wrong choice");
